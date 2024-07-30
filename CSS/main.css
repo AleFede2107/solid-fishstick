@@ -63,6 +63,15 @@ body, html{
     --content-font: "Open Sans", sans-serif;
 }
 
-h1{
-    color: blueviolet;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: var(--cuarternary-color);
+}
+
+.navbarIcon{
+    color: var(--cuarternary-color);
 }
