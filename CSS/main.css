@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patua+One&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patua+One&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patua+One&family=Playwrite+AR:wght@100..400&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
 
 *, *::before, *::after{
     box-sizing: border-box; 
@@ -59,7 +59,7 @@ body, html{
     --tertiary-color: #508C9B;
     --cuarternary-color: #EEEEEE;
 
-    --title-font: "Patua One", serif;
+    --title-font: "Playwrite AR", cursive;
     --content-font: "Open Sans", sans-serif;
 }
 
@@ -74,4 +74,26 @@ body, html{
 
 .navbarIcon{
     color: var(--cuarternary-color);
+}
+
+.header{
+    background: linear-gradient(var(--secondary-color), var(--tertiary-color));
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-text, .small-text{
+    color: var(--cuarternary-color);
+}
+
+.big-text{
+    font-family: var(--title-font);
+    font-weight: 800;
+}
+
+.small-text{
+    font-family: var(--content-font);
+    font-weight: 600;
 }
