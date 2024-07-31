@@ -120,9 +120,35 @@ html {
   font-size: 1.5rem;
 }
 
-.about-me{
-    background-color: var(--tertiary-color);
+.about{
+    background-color: var(--cuarternary-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "section1 section2 section2";
+    gap: 1rem;
+    margin: 2rem;
+    place-items: center;
+}
+
+.img-container-about{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    height: 60vh;
+    gap: 1rem;
+    grid-area: section2;
+}
+
+.about-me{
+    grid-area: section1;
+}
+
+.about-img{
+    width: 30%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 1vh;
+}
+
+.about-img:nth-child(2){
+    align-self: flex-end;
 }
